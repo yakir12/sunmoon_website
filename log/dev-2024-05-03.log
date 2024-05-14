@@ -1,0 +1,1204 @@
+┌ Info: 2024-05-03 11:27:25 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-03 11:27:27 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-03 11:27:27 Listening on: 127.0.0.1:8000, thread id: 2
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/PnoHb/src/Servers.jl:382
+┌ Info: 2024-05-03 11:37:32 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-03 11:37:33 MethodError: no method matching get_table(::Type{DateRange}, ::Reactive{String})
+│ Stacktrace:
+│   [1] Main.App.var"##Main.App_ReactiveModel!#237"()
+│     @ Main.App ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:1046
+│   [2] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│   [3] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│   [4] |>
+│     @ ./operators.jl:917 [inlined]
+│   [5] init(t::Type{Main.App.var"Main.App_ReactiveModel"}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool, always_register_channels::Bool)
+│     @ Stipple ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:508
+│   [6] init(t::Type{Main.App.var"Main.App_ReactiveModel"})
+│     @ Stipple ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:496
+│   [7] top-level scope
+│     @ ~/.julia/packages/Stipple/0khJ6/src/ReactiveTools.jl:762
+│   [8] eval
+│     @ ./boot.jl:385 [inlined]
+│   [9] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools ~/.julia/packages/Stipple/0khJ6/src/ReactiveTools.jl:1188
+│  [10] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [11] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [12] (::Stipple.Pages.var"#7#10"{typeof(Main.App.ui), String, @Kwargs{}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/0khJ6/src/Pages.jl:68
+│  [13] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:547
+│  [14] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:172
+│  [15] route_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Router.jl:147 [inlined]
+│  [16] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:300
+│  [17] handle_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:292 [inlined]
+│  [18] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/macros.jl:123
+│  [19] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [20] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [21] #153
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:425 [inlined]
+│  [22] run_work_thunk
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│  [23] #remotecall_fetch#158
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:450 [inlined]
+│  [24] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:449 [inlined]
+│  [25] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:492 [inlined]
+│  [26] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:344
+│  [27] setup_http_listener (repeats 2 times)
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:342 [inlined]
+│  [28] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:313
+│  [29] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:333
+│  [30] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:124
+│  [31] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [32] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [33] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:469
+│  [34] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:401
+│ 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:356
+┌ Info: 2024-05-03 11:39:04 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-03 11:39:13 MethodError: no method matching get_table(::Reactive{DateRange}, ::Reactive{String})
+│ Stacktrace:
+│   [1] Main.App.var"##Main.App_ReactiveModel!#238"()
+│     @ Main.App ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:1046
+│   [2] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│   [3] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│   [4] |>
+│     @ ./operators.jl:917 [inlined]
+│   [5] init(t::Type{Main.App.var"Main.App_ReactiveModel"}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool, always_register_channels::Bool)
+│     @ Stipple ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:508
+│   [6] init(t::Type{Main.App.var"Main.App_ReactiveModel"})
+│     @ Stipple ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:496
+│   [7] top-level scope
+│     @ ~/.julia/packages/Stipple/0khJ6/src/ReactiveTools.jl:762
+│   [8] eval
+│     @ ./boot.jl:385 [inlined]
+│   [9] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools ~/.julia/packages/Stipple/0khJ6/src/ReactiveTools.jl:1188
+│  [10] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [11] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [12] (::Stipple.Pages.var"#7#10"{typeof(Main.App.ui), String, @Kwargs{}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/0khJ6/src/Pages.jl:68
+│  [13] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:547
+│  [14] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:172
+│  [15] route_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Router.jl:147 [inlined]
+│  [16] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:300
+│  [17] handle_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:292 [inlined]
+│  [18] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/macros.jl:123
+│  [19] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [20] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [21] #153
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:425 [inlined]
+│  [22] run_work_thunk
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│  [23] #remotecall_fetch#158
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:450 [inlined]
+│  [24] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:449 [inlined]
+│  [25] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:492 [inlined]
+│  [26] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:344
+│  [27] setup_http_listener (repeats 2 times)
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:342 [inlined]
+│  [28] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:313
+│  [29] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:333
+│  [30] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:124
+│  [31] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [32] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [33] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:469
+│  [34] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:401
+│ 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:356
+┌ Info: 2024-05-03 11:39:34 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 11:42:00 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 11:43:04 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-03 11:45:06 Failed to revise /home/yakir/new_projects/sunmoon_website/app.jl
+│   exception = (Base.Meta.ParseError("ParseError:\n# Error @ /home/yakir/new_projects/sunmoon_website/app.jl:54:5\n\nend\n#  \n└ ── Expected `end`", Base.JuliaSyntax.ParseError(Base.JuliaSyntax.SourceFile("module App\nusing GenieFramework\nimport DataFrames: DataFrame\n@genietools\n\nusing Main.SunMoon\n\nSunMoon.__init__()\n\nconst latitude_longitude = Dict(zip([\"Bela Bela\", \"Vryburg\", \"Sardinia\"], [(10, 10), (20, 20), (30, 30)]))\n\nfunction get_table(daterange::DateRange, station::String)\n    start_date = daterange.start\n    end_date = daterange.stop\n    latitude, longitude = latitude_longitude[station]\n    location_name = station\n    elevations=[20, 30, 45, 60, 75]\n    points_per_day=24\n    crepuscular_elevation=0\n    df, declination = SunMoon.get_table(start_date, end_date, latitude, longitude, elevations, points_per_day, crepuscular_elevation)\n    declination_msg = \"the magnetic declination angle is \$(round(declination; digits=2))°\"\n    data = DataTable(df)\n    return (data, declination_msg)\nend\n\nfunction magnetic_declination(daterange::DateRange, station::String)\n    start_date = daterange.start\n    latitude, longitude = latitude_longitude[station]\n    md = magnetic_declination(decimaldate(start_date), latitude, longitude, altitude)\n\n@app begin\n    @in daterange = DateRange(now(), now()+Day(7))\n    @out stations = collect(keys(latitude_longitude))\n    @in station = first(keys(latitude_longitude))\n    @out data = first(get_table(daterange[], station[]))\n    @out declination_msg = last(get_table(daterange[], station[]))\n\n    @onchange daterange, station begin\n        data, declination_msg = get_table(daterange, station)\n    end\nend\n\nfunction ui()\n    [\n     p(datepicker(:daterange, range=true, minimal=true))\n     p(select(:station; options=:stations))\n     p(@text(:declination_msg))\n     p(table(:data))\n    ]\nend\n\n@page(\"/\", ui)\n\nend\n", 0, "/home/yakir/new_projects/sunmoon_website/app.jl", 1, [1, 12, 33, 62, 74, 75, 94, 95, 114, 115, 222, 223, 281, 314, 344, 398, 426, 462, 484, 512, 646, 738, 763, 798, 802, 803, 872, 905, 959, 1045, 1046, 1057, 1108, 1162, 1212, 1269, 1336, 1337, 1376, 1438, 1446, 1450, 1451, 1465, 1471, 1528, 1572, 1604, 1625, 1631, 1635, 1636, 1651, 1652, 1656]), Base.JuliaSyntax.Diagnostic[Base.JuliaSyntax.Diagnostic(1656, 1655, :error, "Expected `end`")], :block)), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x0000741863a580a7, Ptr{Nothing} @0x0000741863a46a0d, Ptr{Nothing} @0x0000741863a64834, Ptr{Nothing} @0x0000741863a64344, Ptr{Nothing} @0x0000741863a65083, Ptr{Nothing} @0x0000741863a65e5d, Base.InterpreterIP in top-level CodeInfo for Revise at statement 0])
+└ @ Revise /home/yakir/.julia/packages/Revise/bAgL0/src/packagedef.jl:724
+┌ Warning: 2024-05-03 11:45:07 The running code does not match the saved version for the following files:
+│ 
+│   /home/yakir/new_projects/sunmoon_website/app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise /home/yakir/.julia/packages/Revise/bAgL0/src/packagedef.jl:832
+┌ Error: 2024-05-03 11:49:46 MethodError: no method matching magnetic_declination(::DateRange, ::String)
+│ 
+│ Closest candidates are:
+│   magnetic_declination(!Matched::Date, ::String)
+│    @ Main.App ~/new_projects/sunmoon_website/app.jl:24
+│ 
+│ Stacktrace:
+│   [1] Main.App.var"##Main.App_ReactiveModel!#240"()
+│     @ Main.App ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:1046
+│   [2] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│   [3] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│   [4] |>
+│     @ ./operators.jl:917 [inlined]
+│   [5] init(t::Type{Main.App.var"Main.App_ReactiveModel"}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool, always_register_channels::Bool)
+│     @ Stipple ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:508
+│   [6] init(t::Type{Main.App.var"Main.App_ReactiveModel"})
+│     @ Stipple ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:496
+│   [7] top-level scope
+│     @ ~/.julia/packages/Stipple/0khJ6/src/ReactiveTools.jl:762
+│   [8] eval
+│     @ ./boot.jl:385 [inlined]
+│   [9] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools ~/.julia/packages/Stipple/0khJ6/src/ReactiveTools.jl:1188
+│  [10] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [11] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [12] (::Stipple.Pages.var"#7#10"{typeof(Main.App.ui), String, @Kwargs{}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/0khJ6/src/Pages.jl:68
+│  [13] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:547
+│  [14] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:172
+│  [15] route_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Router.jl:147 [inlined]
+│  [16] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:300
+│  [17] handle_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:292 [inlined]
+│  [18] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/macros.jl:123
+│  [19] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [20] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [21] #153
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:425 [inlined]
+│  [22] run_work_thunk
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│  [23] #remotecall_fetch#158
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:450 [inlined]
+│  [24] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:449 [inlined]
+│  [25] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:492 [inlined]
+│  [26] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:344
+│  [27] setup_http_listener (repeats 2 times)
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:342 [inlined]
+│  [28] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:313
+│  [29] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:333
+│  [30] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:124
+│  [31] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [32] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [33] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:469
+│  [34] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:401
+│ 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:356
+┌ Info: 2024-05-03 11:52:34 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-03 11:52:36 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-03 11:52:37 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/PnoHb/src/Servers.jl:382
+┌ Info: 2024-05-03 11:54:03 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 11:55:54 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-03 11:55:57 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-03 11:55:57 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/PnoHb/src/Servers.jl:382
+┌ Info: 2024-05-03 11:57:05 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 11:57:33 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-03 11:57:50 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-03 11:57:50 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/PnoHb/src/Servers.jl:382
+┌ Info: 2024-05-03 12:01:11 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 12:04:35 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 12:05:54 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-03 12:06:00 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   9
+│ 
+│   Exception:
+│   ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame.")
+│ 
+│   exception = (ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007317f5729d85, Ptr{Nothing} @0x00007317f572a42d, Ptr{Nothing} @0x00007317f572a4ed, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff59b1f, Ptr{Nothing} @0x000073186ff59ec0, Ptr{Nothing} @0x000073186ff5a1e9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff0d397, Ptr{Nothing} @0x00007317edfa7973, Ptr{Nothing} @0x00007317edfcb561, Ptr{Nothing} @0x00007317edfcb754, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a1267b7, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a474edd, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x00007317f5790257, Ptr{Nothing} @0x00007317f5790295, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317edfca8ee, Ptr{Nothing} @0x00007317edfcb369, Ptr{Nothing} @0x00007317edfcb3b3, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfca661, Ptr{Nothing} @0x00007317edfca737, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfbab5f, Ptr{Nothing} @0x00007317edfbae22, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57d7804, Ptr{Nothing} @0x00007317f57d7c4d, Ptr{Nothing} @0x00007317f57d7cba, Ptr{Nothing} @0x00007317f57d7cf9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57c0bfd, Ptr{Nothing} @0x00007317f57c0c52, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f9729d8f, Ptr{Nothing} @0x00007317f97ce963, Ptr{Nothing} @0x00007317f978544c, Ptr{Nothing} @0x00007317f57bffa4, Ptr{Nothing} @0x00007317f57c00f5, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f57baa09, Ptr{Nothing} @0x00007317f57bd238, Ptr{Nothing} @0x00007317f57bd862, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870469d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-03 12:06:02 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   22
+│ 
+│   Exception:
+│   ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame.")
+│ 
+│   exception = (ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007317f5729d85, Ptr{Nothing} @0x00007317f572a42d, Ptr{Nothing} @0x00007317f572a4ed, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff59b1f, Ptr{Nothing} @0x000073186ff59ec0, Ptr{Nothing} @0x000073186ff5a1e9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff0d397, Ptr{Nothing} @0x00007317edfa7973, Ptr{Nothing} @0x00007317edfcb561, Ptr{Nothing} @0x00007317edfcb754, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a1267b7, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a474edd, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x00007317f5790257, Ptr{Nothing} @0x00007317f5790295, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317edfca8ee, Ptr{Nothing} @0x00007317edfcb369, Ptr{Nothing} @0x00007317edfcb3b3, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfca661, Ptr{Nothing} @0x00007317edfca737, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfbab5f, Ptr{Nothing} @0x00007317edfbae22, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57d7804, Ptr{Nothing} @0x00007317f57d7c4d, Ptr{Nothing} @0x00007317f57d7cba, Ptr{Nothing} @0x00007317f57d7cf9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57c0bfd, Ptr{Nothing} @0x00007317f57c0c52, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f9729d8f, Ptr{Nothing} @0x00007317f97ce963, Ptr{Nothing} @0x00007317f978544c, Ptr{Nothing} @0x00007317f57bffa4, Ptr{Nothing} @0x00007317f57c00f5, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f57baa09, Ptr{Nothing} @0x00007317f57bd238, Ptr{Nothing} @0x00007317f57bd862, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870469d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-03 12:06:03 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   12
+│ 
+│   Exception:
+│   ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame.")
+│ 
+│   exception = (ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007317f5729d85, Ptr{Nothing} @0x00007317f572a42d, Ptr{Nothing} @0x00007317f572a4ed, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff59b1f, Ptr{Nothing} @0x000073186ff59ec0, Ptr{Nothing} @0x000073186ff5a1e9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff0d397, Ptr{Nothing} @0x00007317edfa7973, Ptr{Nothing} @0x00007317edfcb561, Ptr{Nothing} @0x00007317edfcb754, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a1267b7, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a474edd, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x00007317f5790257, Ptr{Nothing} @0x00007317f5790295, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317edfca8ee, Ptr{Nothing} @0x00007317edfcb369, Ptr{Nothing} @0x00007317edfcb3b3, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfca661, Ptr{Nothing} @0x00007317edfca737, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfbab5f, Ptr{Nothing} @0x00007317edfbae22, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57d7804, Ptr{Nothing} @0x00007317f57d7c4d, Ptr{Nothing} @0x00007317f57d7cba, Ptr{Nothing} @0x00007317f57d7cf9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57c0bfd, Ptr{Nothing} @0x00007317f57c0c52, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f9729d8f, Ptr{Nothing} @0x00007317f97ce963, Ptr{Nothing} @0x00007317f978544c, Ptr{Nothing} @0x00007317f57bffa4, Ptr{Nothing} @0x00007317f57c00f5, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f57baa09, Ptr{Nothing} @0x00007317f57bd238, Ptr{Nothing} @0x00007317f57bd862, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870469d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Info: 2024-05-03 12:06:09 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-03 12:06:14 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   15
+│ 
+│   Exception:
+│   ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame.")
+│ 
+│   exception = (ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007317f5729d85, Ptr{Nothing} @0x00007317f572a42d, Ptr{Nothing} @0x00007317f572a4ed, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff59b1f, Ptr{Nothing} @0x000073186ff59ec0, Ptr{Nothing} @0x000073186ff5a1e9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff0d397, Ptr{Nothing} @0x00007317edfa7973, Ptr{Nothing} @0x00007317edfcb561, Ptr{Nothing} @0x00007317edfcb754, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a1267b7, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a474edd, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x00007317f5790257, Ptr{Nothing} @0x00007317f5790295, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317edfca8ee, Ptr{Nothing} @0x00007317edfcb369, Ptr{Nothing} @0x00007317edfcb3b3, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfca661, Ptr{Nothing} @0x00007317edfca737, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfbab5f, Ptr{Nothing} @0x00007317edfbae22, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57d7804, Ptr{Nothing} @0x00007317f57d7c4d, Ptr{Nothing} @0x00007317f57d7cba, Ptr{Nothing} @0x00007317f57d7cf9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57c0bfd, Ptr{Nothing} @0x00007317f57c0c52, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f9729d8f, Ptr{Nothing} @0x00007317f97ce963, Ptr{Nothing} @0x00007317f978544c, Ptr{Nothing} @0x00007317f57bffa4, Ptr{Nothing} @0x00007317f57c00f5, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f57baa09, Ptr{Nothing} @0x00007317f57bd238, Ptr{Nothing} @0x00007317f57bd862, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870469d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-03 12:06:16 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   7
+│ 
+│   Exception:
+│   ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame.")
+│ 
+│   exception = (ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007317f5729d85, Ptr{Nothing} @0x00007317f572a42d, Ptr{Nothing} @0x00007317f572a4ed, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff59b1f, Ptr{Nothing} @0x000073186ff59ec0, Ptr{Nothing} @0x000073186ff5a1e9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff0d397, Ptr{Nothing} @0x00007317edfa7973, Ptr{Nothing} @0x00007317edfcb561, Ptr{Nothing} @0x00007317edfcb754, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a1267b7, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a474edd, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x00007317f5790257, Ptr{Nothing} @0x00007317f5790295, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317edfca8ee, Ptr{Nothing} @0x00007317edfcb369, Ptr{Nothing} @0x00007317edfcb3b3, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfca661, Ptr{Nothing} @0x00007317edfca737, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfbab5f, Ptr{Nothing} @0x00007317edfbae22, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57d7804, Ptr{Nothing} @0x00007317f57d7c4d, Ptr{Nothing} @0x00007317f57d7cba, Ptr{Nothing} @0x00007317f57d7cf9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57c0bfd, Ptr{Nothing} @0x00007317f57c0c52, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f9729d8f, Ptr{Nothing} @0x00007317f97ce963, Ptr{Nothing} @0x00007317f978544c, Ptr{Nothing} @0x00007317f57bffa4, Ptr{Nothing} @0x00007317f57c00f5, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f57baa09, Ptr{Nothing} @0x00007317f57bd238, Ptr{Nothing} @0x00007317f57bd862, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870469d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-03 12:06:21 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   38
+│ 
+│   Exception:
+│   ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame.")
+│ 
+│   exception = (ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007317f5729d85, Ptr{Nothing} @0x00007317f572a42d, Ptr{Nothing} @0x00007317f572a4ed, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff59b1f, Ptr{Nothing} @0x000073186ff59ec0, Ptr{Nothing} @0x000073186ff5a1e9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff0d397, Ptr{Nothing} @0x00007317edfa7973, Ptr{Nothing} @0x00007317edfcb561, Ptr{Nothing} @0x00007317edfcb754, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a1267b7, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a474edd, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x00007317f5790257, Ptr{Nothing} @0x00007317f5790295, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317edfca8ee, Ptr{Nothing} @0x00007317edfcb369, Ptr{Nothing} @0x00007317edfcb3b3, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfca661, Ptr{Nothing} @0x00007317edfca737, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfbab5f, Ptr{Nothing} @0x00007317edfbae22, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57d7804, Ptr{Nothing} @0x00007317f57d7c4d, Ptr{Nothing} @0x00007317f57d7cba, Ptr{Nothing} @0x00007317f57d7cf9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57c0bfd, Ptr{Nothing} @0x00007317f57c0c52, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f9729d8f, Ptr{Nothing} @0x00007317f97ce963, Ptr{Nothing} @0x00007317f978544c, Ptr{Nothing} @0x00007317f57bffa4, Ptr{Nothing} @0x00007317f57c00f5, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f57baa09, Ptr{Nothing} @0x00007317f57bd238, Ptr{Nothing} @0x00007317f57bd862, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870469d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-03 12:06:56 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   DateRange
+│ 
+│   Value:
+│   DateRange(Date("2024-05-02"), Date("2024-05-23"))
+│ 
+│   Exception:
+│   ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame.")
+│ 
+│   exception = (ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007317f5729d85, Ptr{Nothing} @0x00007317f572a42d, Ptr{Nothing} @0x00007317f572a4ed, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff59b1f, Ptr{Nothing} @0x000073186ff59ec0, Ptr{Nothing} @0x000073186ff5a1e9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff0d397, Ptr{Nothing} @0x00007317edfa7973, Ptr{Nothing} @0x00007317edfcb561, Ptr{Nothing} @0x00007317edfcb754, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a1267b7, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a474edd, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x00007317f5790257, Ptr{Nothing} @0x00007317f5790295, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317edf8cfa7, Ptr{Nothing} @0x00007317edf8da6e, Ptr{Nothing} @0x00007317edf8dac0, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfee9f2, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfbab5f, Ptr{Nothing} @0x00007317edfbae22, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57d7804, Ptr{Nothing} @0x00007317f57d7c4d, Ptr{Nothing} @0x00007317f57d7cba, Ptr{Nothing} @0x00007317f57d7cf9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57c0bfd, Ptr{Nothing} @0x00007317f57c0c52, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f9729d8f, Ptr{Nothing} @0x00007317f97ce963, Ptr{Nothing} @0x00007317f978544c, Ptr{Nothing} @0x00007317f57bffa4, Ptr{Nothing} @0x00007317f57c00f5, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f57baa09, Ptr{Nothing} @0x00007317f57bd238, Ptr{Nothing} @0x00007317f57bd862, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870469d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-03 12:07:23 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   3
+│ 
+│   Exception:
+│   ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame.")
+│ 
+│   exception = (ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007317f5729d85, Ptr{Nothing} @0x00007317f572a42d, Ptr{Nothing} @0x00007317f572a4ed, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff59b1f, Ptr{Nothing} @0x000073186ff59ec0, Ptr{Nothing} @0x000073186ff5a1e9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff0d397, Ptr{Nothing} @0x00007317edfa7973, Ptr{Nothing} @0x00007317edfcb561, Ptr{Nothing} @0x00007317edfcb754, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a1267b7, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a474edd, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x00007317f5790257, Ptr{Nothing} @0x00007317f5790295, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317edfca8ee, Ptr{Nothing} @0x00007317edfcb369, Ptr{Nothing} @0x00007317edfcb3b3, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfca661, Ptr{Nothing} @0x00007317edfca737, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfbab5f, Ptr{Nothing} @0x00007317edfbae22, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57d7804, Ptr{Nothing} @0x00007317f57d7c4d, Ptr{Nothing} @0x00007317f57d7cba, Ptr{Nothing} @0x00007317f57d7cf9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57c0bfd, Ptr{Nothing} @0x00007317f57c0c52, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f9729d8f, Ptr{Nothing} @0x00007317f97ce963, Ptr{Nothing} @0x00007317f978544c, Ptr{Nothing} @0x00007317f57bffa4, Ptr{Nothing} @0x00007317f57c00f5, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f57baa09, Ptr{Nothing} @0x00007317f57bd238, Ptr{Nothing} @0x00007317f57bd862, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870469d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-03 12:07:39 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   3
+│ 
+│   Exception:
+│   ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame.")
+│ 
+│   exception = (ArgumentError("Tried renaming :↑0° to :Sunrise, when :↑0° does not exist in the data frame."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007317f5729d85, Ptr{Nothing} @0x00007317f572a42d, Ptr{Nothing} @0x00007317f572a4ed, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff59b1f, Ptr{Nothing} @0x000073186ff59ec0, Ptr{Nothing} @0x000073186ff5a1e9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x000073186ff0d397, Ptr{Nothing} @0x00007317edfa7973, Ptr{Nothing} @0x00007317edfcb561, Ptr{Nothing} @0x00007317edfcb754, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a1267b7, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a474edd, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x00007317f5790257, Ptr{Nothing} @0x00007317f5790295, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317edfca8ee, Ptr{Nothing} @0x00007317edfcb369, Ptr{Nothing} @0x00007317edfcb3b3, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfca661, Ptr{Nothing} @0x00007317edfca737, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317edfbab5f, Ptr{Nothing} @0x00007317edfbae22, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57d7804, Ptr{Nothing} @0x00007317f57d7c4d, Ptr{Nothing} @0x00007317f57d7cba, Ptr{Nothing} @0x00007317f57d7cf9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57c0bfd, Ptr{Nothing} @0x00007317f57c0c52, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f9729d8f, Ptr{Nothing} @0x00007317f97ce963, Ptr{Nothing} @0x00007317f978544c, Ptr{Nothing} @0x00007317f57bffa4, Ptr{Nothing} @0x00007317f57c00f5, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f57baa09, Ptr{Nothing} @0x00007317f57bd238, Ptr{Nothing} @0x00007317f57bd862, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870469d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Info: 2024-05-03 12:09:40 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 13:33:08 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-03 13:33:09 MethodError: no method matching get_table(::DateRange, ::String, ::Int64)
+│ 
+│ Closest candidates are:
+│   get_table(::DateRange, ::String, ::Any, !Matched::Any)
+│    @ Main.App ~/new_projects/sunmoon_website/app.jl:12
+│ 
+│ Stacktrace:
+│   [1] Main.App.var"##Main.App_ReactiveModel!#238"()
+│     @ Main.App ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:1046
+│   [2] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│   [3] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│   [4] |>
+│     @ ./operators.jl:917 [inlined]
+│   [5] init(t::Type{Main.App.var"Main.App_ReactiveModel"}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool, always_register_channels::Bool)
+│     @ Stipple ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:508
+│   [6] init(t::Type{Main.App.var"Main.App_ReactiveModel"})
+│     @ Stipple ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:496
+│   [7] top-level scope
+│     @ ~/.julia/packages/Stipple/0khJ6/src/ReactiveTools.jl:762
+│   [8] eval
+│     @ ./boot.jl:385 [inlined]
+│   [9] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools ~/.julia/packages/Stipple/0khJ6/src/ReactiveTools.jl:1188
+│  [10] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [11] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [12] (::Stipple.Pages.var"#7#10"{typeof(Main.App.ui), String, @Kwargs{}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/0khJ6/src/Pages.jl:68
+│  [13] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:547
+│  [14] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:172
+│  [15] route_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Router.jl:147 [inlined]
+│  [16] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:300
+│  [17] handle_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:292 [inlined]
+│  [18] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/macros.jl:123
+│  [19] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [20] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [21] #153
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:425 [inlined]
+│  [22] run_work_thunk
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│  [23] #remotecall_fetch#158
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:450 [inlined]
+│  [24] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:449 [inlined]
+│  [25] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:492 [inlined]
+│  [26] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:344
+│  [27] setup_http_listener (repeats 2 times)
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:342 [inlined]
+│  [28] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:313
+│  [29] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:333
+│  [30] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:124
+│  [31] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [32] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [33] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:469
+│  [34] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:401
+│ 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:356
+┌ Info: 2024-05-03 13:33:42 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-03 13:34:09 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   20, 30, 45, 60, 
+│ 
+│   Exception:
+│   ArgumentError("input string is empty or only contains whitespace")
+│ 
+│   exception = (ArgumentError("input string is empty or only contains whitespace"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000073185ab8c356, Ptr{Nothing} @0x000073185a7ae5dc, Ptr{Nothing} @0x00007317dd12cbda, Ptr{Nothing} @0x00007317dd13ed14, Ptr{Nothing} @0x00007317dd13ef18, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a1267b7, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x000073185a474edd, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870458fc8, Ptr{Nothing} @0x00007317f5790257, Ptr{Nothing} @0x00007317f5790295, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317edf957f7, Ptr{Nothing} @0x00007317edf962be, Ptr{Nothing} @0x00007317edf96310, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317dd13eab4, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317dd13b28f, Ptr{Nothing} @0x00007317dd13b552, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57d7804, Ptr{Nothing} @0x00007317f57d7c4d, Ptr{Nothing} @0x00007317f57d7cba, Ptr{Nothing} @0x00007317f57d7cf9, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x00007317f57c0bfd, Ptr{Nothing} @0x00007317f57c0c52, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f9729d8f, Ptr{Nothing} @0x00007317f97ce963, Ptr{Nothing} @0x00007317f978544c, Ptr{Nothing} @0x00007317f57bffa4, Ptr{Nothing} @0x00007317f57c00f5, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870456fc8, Ptr{Nothing} @0x00007317f57baa09, Ptr{Nothing} @0x00007317f57bd238, Ptr{Nothing} @0x00007317f57bd862, Ptr{Nothing} @0x0000731870446a0d, Ptr{Nothing} @0x0000731870469d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Info: 2024-05-03 13:53:43 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-03 13:53:43 ArgumentError: Main.App.var"#75#77" doesn't have a defined `StructTypes.StructType`
+│ Stacktrace:
+│   [1] write(::StructTypes.NoStructType, buf::Vector{UInt8}, pos::Int64, len::Int64, ::Main.App.var"#75#77"; kw::@Kwargs{})
+│     @ JSON3 ~/.julia/packages/JSON3/jSAdy/src/write.jl:93
+│   [2] write(::StructTypes.NoStructType, buf::Vector{UInt8}, pos::Int64, len::Int64, ::Main.App.var"#75#77")
+│     @ JSON3 ~/.julia/packages/JSON3/jSAdy/src/write.jl:93
+│   [3] write(::StructTypes.ArrayType, buf::Vector{UInt8}, pos::Int64, len::Int64, x::Vector{Main.App.var"#75#77"}; kw::@Kwargs{})
+│     @ JSON3 ~/.julia/packages/JSON3/jSAdy/src/write.jl:187
+│   [4] write
+│     @ ~/.julia/packages/JSON3/jSAdy/src/write.jl:181 [inlined]
+│   [5] write(obj::Vector{Main.App.var"#75#77"}; kw::@Kwargs{})
+│     @ JSON3 ~/.julia/packages/JSON3/jSAdy/src/write.jl:40
+│   [6] write
+│     @ ~/.julia/packages/JSON3/jSAdy/src/write.jl:37 [inlined]
+│   [7] js_attr(x::Vector{Main.App.var"#75#77"})
+│     @ Stipple ~/.julia/packages/Stipple/0khJ6/src/stipple/rendering.jl:208
+│   [8] attributes(kwargs::Dict{Symbol, Any}, mappings::Dict{String, String})
+│     @ Stipple ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:1102
+│   [9] kw(kwargs::Vector{Pair{Symbol, Any}}, attributesmappings::Dict{String, String}; merge::Bool, flexgrid_mappings::Dict{Symbol, Symbol})
+│     @ StippleUI.API ~/.julia/packages/StippleUI/V4Cjf/src/API.jl:228
+│  [10] kw (repeats 2 times)
+│     @ ~/.julia/packages/StippleUI/V4Cjf/src/API.jl:222 [inlined]
+│  [11] textfield(label::String, fieldname::Symbol, args::String; content::String, kwargs::@Kwargs{filled::String, hint::String, rules::Vector{Main.App.var"#75#77"}})
+│     @ StippleUI.FormInputs ~/.julia/packages/StippleUI/V4Cjf/src/FormInputs.jl:97
+│  [12] textfield
+│     @ ~/.julia/packages/StippleUI/V4Cjf/src/FormInputs.jl:92 [inlined]
+│  [13] ui()
+│     @ Main.App ~/new_projects/sunmoon_website/app.jl:46
+│  [14] html!(data::typeof(Main.App.ui); context::Module, status::Int64, headers::Dict{String, String}, layout::String, forceparse::Bool, noparse::Bool, vars::@Kwargs{model::Main.App.var"##Main.App_ReactiveModel!#239"})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/w41yU/src/renderers/Html.jl:583
+│  [15] (::Stipple.Pages.var"#7#10"{typeof(Main.App.ui), String, @Kwargs{}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/0khJ6/src/Pages.jl:68
+│  [16] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:547
+│  [17] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:172
+│  [18] route_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Router.jl:147 [inlined]
+│  [19] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:300
+│  [20] handle_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:292 [inlined]
+│  [21] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/macros.jl:123
+│  [22] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [23] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [24] #153
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:425 [inlined]
+│  [25] run_work_thunk
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│  [26] #remotecall_fetch#158
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:450 [inlined]
+│  [27] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:449 [inlined]
+│  [28] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:344
+│  [30] setup_http_listener (repeats 2 times)
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:342 [inlined]
+│  [31] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:313
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:333
+│  [33] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:124
+│  [34] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [35] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:469
+│  [37] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:401
+│ 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:356
+┌ Error: 2024-05-03 14:00:04 Failed to revise /home/yakir/new_projects/sunmoon_website/app.jl
+│   exception = (ErrorException("lowering returned an error, \$(Expr(:error, \"invalid keyword argument name \\\"\\\"lazy-rules\\\"\\\" around /home/yakir/new_projects/sunmoon_website/app.jl:46\"))"), Union{Ptr{Nothing}, Base.InterpreterIP}[])
+└ @ Revise /home/yakir/.julia/packages/Revise/bAgL0/src/packagedef.jl:724
+┌ Warning: 2024-05-03 14:00:04 The running code does not match the saved version for the following files:
+│ 
+│   /home/yakir/new_projects/sunmoon_website/app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise /home/yakir/.julia/packages/Revise/bAgL0/src/packagedef.jl:832
+┌ Error: 2024-05-03 14:00:05 MethodError: no method matching ui()
+│ Stacktrace:
+│   [1] html!(data::typeof(Main.App.ui); context::Module, status::Int64, headers::Dict{String, String}, layout::String, forceparse::Bool, noparse::Bool, vars::@Kwargs{model::Main.App.var"##Main.App_ReactiveModel!#239"})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/w41yU/src/renderers/Html.jl:583
+│   [2] (::Stipple.Pages.var"#7#10"{typeof(Main.App.ui), String, @Kwargs{}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/0khJ6/src/Pages.jl:68
+│   [3] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:547
+│   [4] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:172
+│   [5] route_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Router.jl:147 [inlined]
+│   [6] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:300
+│   [7] handle_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:292 [inlined]
+│   [8] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/macros.jl:123
+│   [9] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [10] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [11] #153
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:425 [inlined]
+│  [12] run_work_thunk
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│  [13] #remotecall_fetch#158
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:450 [inlined]
+│  [14] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:449 [inlined]
+│  [15] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:492 [inlined]
+│  [16] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:344
+│  [17] setup_http_listener (repeats 2 times)
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:342 [inlined]
+│  [18] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:313
+│  [19] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:333
+│  [20] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:124
+│  [21] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [22] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [23] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:469
+│  [24] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:401
+│ 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:356
+┌ Info: 2024-05-03 14:01:07 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-03 14:01:25 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-03 14:01:25 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/PnoHb/src/Servers.jl:382
+┌ Error: 2024-05-03 14:01:38 ArgumentError: Main.App.var"#9#11" doesn't have a defined `StructTypes.StructType`
+│ Stacktrace:
+│   [1] write(::StructTypes.NoStructType, buf::Vector{UInt8}, pos::Int64, len::Int64, ::Main.App.var"#9#11"; kw::@Kwargs{})
+│     @ JSON3 ~/.julia/packages/JSON3/jSAdy/src/write.jl:93
+│   [2] write(::StructTypes.NoStructType, buf::Vector{UInt8}, pos::Int64, len::Int64, ::Main.App.var"#9#11")
+│     @ JSON3 ~/.julia/packages/JSON3/jSAdy/src/write.jl:93
+│   [3] write(::StructTypes.ArrayType, buf::Vector{UInt8}, pos::Int64, len::Int64, x::Vector{Main.App.var"#9#11"}; kw::@Kwargs{})
+│     @ JSON3 ~/.julia/packages/JSON3/jSAdy/src/write.jl:187
+│   [4] write
+│     @ ~/.julia/packages/JSON3/jSAdy/src/write.jl:181 [inlined]
+│   [5] write(obj::Vector{Main.App.var"#9#11"}; kw::@Kwargs{})
+│     @ JSON3 ~/.julia/packages/JSON3/jSAdy/src/write.jl:40
+│   [6] write
+│     @ ~/.julia/packages/JSON3/jSAdy/src/write.jl:37 [inlined]
+│   [7] js_attr(x::Vector{Main.App.var"#9#11"})
+│     @ Stipple ~/.julia/packages/Stipple/0khJ6/src/stipple/rendering.jl:208
+│   [8] attributes
+│     @ ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:1102
+│   [9] kw(kwargs::Vector{Pair{Symbol, Any}}, attributesmappings::Dict{String, String}; merge::Bool, flexgrid_mappings::Dict{Symbol, Symbol})
+│     @ StippleUI.API ~/.julia/packages/StippleUI/V4Cjf/src/API.jl:228
+│  [10] kw (repeats 2 times)
+│     @ ~/.julia/packages/StippleUI/V4Cjf/src/API.jl:222 [inlined]
+│  [11] textfield(::String, ::Symbol; content::String, kwargs::@Kwargs{filled::String, lazyrules::Bool, rules::Vector{Main.App.var"#9#11"}})
+│     @ StippleUI.FormInputs ~/.julia/packages/StippleUI/V4Cjf/src/FormInputs.jl:97
+│  [12] textfield
+│     @ ~/.julia/packages/StippleUI/V4Cjf/src/FormInputs.jl:92 [inlined]
+│  [13] ui()
+│     @ Main.App ~/new_projects/sunmoon_website/app.jl:46
+│  [14] html!(data::typeof(Main.App.ui); context::Module, status::Int64, headers::Dict{String, String}, layout::String, forceparse::Bool, noparse::Bool, vars::@Kwargs{model::Main.App.var"##Main.App_ReactiveModel!#236"})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/w41yU/src/renderers/Html.jl:583
+│  [15] (::Stipple.Pages.var"#7#10"{typeof(Main.App.ui), String, @Kwargs{}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/0khJ6/src/Pages.jl:68
+│  [16] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:547
+│  [17] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:172
+│  [18] route_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Router.jl:147 [inlined]
+│  [19] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:300
+│  [20] handle_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:292 [inlined]
+│  [21] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/macros.jl:123
+│  [22] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [23] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [24] #153
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:425 [inlined]
+│  [25] run_work_thunk
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│  [26] #remotecall_fetch#158
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:450 [inlined]
+│  [27] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:449 [inlined]
+│  [28] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:344
+│  [30] setup_http_listener (repeats 2 times)
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:342 [inlined]
+│  [31] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:313
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:333
+│  [33] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:124
+│  [34] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [35] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:469
+│  [37] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:401
+│ 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:356
+┌ Info: 2024-05-03 14:02:04 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 14:02:36 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-03 14:02:59 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   20, 30, 45, 60, 
+│ 
+│   Exception:
+│   ArgumentError("input string is empty or only contains whitespace")
+│ 
+│   exception = (ArgumentError("input string is empty or only contains whitespace"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000071865d78c356, Ptr{Nothing} @0x000071865d3ae5dc, Ptr{Nothing} @0x0000718672b0dcca, Ptr{Nothing} @0x00007185dfd12774, Ptr{Nothing} @0x00007185dfd12978, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x000071865cd267b7, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x000071865d074edd, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x00007185f8390437, Ptr{Nothing} @0x00007185f8390475, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185dfd1ad37, Ptr{Nothing} @0x00007185dfd1b7fe, Ptr{Nothing} @0x00007185dfd1b850, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185dfd1ab14, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0be70bf, Ptr{Nothing} @0x00007185f0be7382, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0be1164, Ptr{Nothing} @0x00007185f0be15ad, Ptr{Nothing} @0x00007185f0be161a, Ptr{Nothing} @0x00007185f0be1659, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0bb643d, Ptr{Nothing} @0x00007185f0bb6492, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185fc329d8f, Ptr{Nothing} @0x00007185fc3ce963, Ptr{Nothing} @0x00007185fc38544c, Ptr{Nothing} @0x00007185f83c0214, Ptr{Nothing} @0x00007185f83c0365, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185f83bacb2, Ptr{Nothing} @0x00007185f83bd4a8, Ptr{Nothing} @0x00007185f83bdad2, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673069d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Info: 2024-05-03 14:03:41 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-03 14:03:42 ArgumentError: ComposedFunction{typeof(!), typeof(isempty)} doesn't have a defined `StructTypes.StructType`
+│ Stacktrace:
+│   [1] write(::StructTypes.NoStructType, buf::Vector{UInt8}, pos::Int64, len::Int64, ::ComposedFunction{typeof(!), typeof(isempty)}; kw::@Kwargs{})
+│     @ JSON3 ~/.julia/packages/JSON3/jSAdy/src/write.jl:93
+│   [2] write(::StructTypes.NoStructType, buf::Vector{UInt8}, pos::Int64, len::Int64, ::ComposedFunction{typeof(!), typeof(isempty)})
+│     @ JSON3 ~/.julia/packages/JSON3/jSAdy/src/write.jl:93
+│   [3] write(::StructTypes.ArrayType, buf::Vector{UInt8}, pos::Int64, len::Int64, x::Vector{ComposedFunction{typeof(!), typeof(isempty)}}; kw::@Kwargs{})
+│     @ JSON3 ~/.julia/packages/JSON3/jSAdy/src/write.jl:187
+│   [4] write
+│     @ ~/.julia/packages/JSON3/jSAdy/src/write.jl:181 [inlined]
+│   [5] write(obj::Vector{ComposedFunction{typeof(!), typeof(isempty)}}; kw::@Kwargs{})
+│     @ JSON3 ~/.julia/packages/JSON3/jSAdy/src/write.jl:40
+│   [6] write
+│     @ ~/.julia/packages/JSON3/jSAdy/src/write.jl:37 [inlined]
+│   [7] js_attr(x::Vector{ComposedFunction{typeof(!), typeof(isempty)}})
+│     @ Stipple ~/.julia/packages/Stipple/0khJ6/src/stipple/rendering.jl:208
+│   [8] attributes
+│     @ ~/.julia/packages/Stipple/0khJ6/src/Stipple.jl:1102
+│   [9] kw(kwargs::Vector{Pair{Symbol, Any}}, attributesmappings::Dict{String, String}; merge::Bool, flexgrid_mappings::Dict{Symbol, Symbol})
+│     @ StippleUI.API ~/.julia/packages/StippleUI/V4Cjf/src/API.jl:228
+│  [10] kw (repeats 2 times)
+│     @ ~/.julia/packages/StippleUI/V4Cjf/src/API.jl:222 [inlined]
+│  [11] textfield(::String, ::Symbol; content::String, kwargs::@Kwargs{filled::String, lazyrules::Bool, rules::Vector{ComposedFunction{typeof(!), typeof(isempty)}}})
+│     @ StippleUI.FormInputs ~/.julia/packages/StippleUI/V4Cjf/src/FormInputs.jl:97
+│  [12] textfield
+│     @ ~/.julia/packages/StippleUI/V4Cjf/src/FormInputs.jl:92 [inlined]
+│  [13] ui()
+│     @ Main.App ~/new_projects/sunmoon_website/app.jl:46
+│  [14] html!(data::typeof(Main.App.ui); context::Module, status::Int64, headers::Dict{String, String}, layout::String, forceparse::Bool, noparse::Bool, vars::@Kwargs{model::Main.App.var"##Main.App_ReactiveModel!#237"})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/w41yU/src/renderers/Html.jl:583
+│  [15] (::Stipple.Pages.var"#7#10"{typeof(Main.App.ui), String, @Kwargs{}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/0khJ6/src/Pages.jl:68
+│  [16] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:547
+│  [17] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:172
+│  [18] route_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Router.jl:147 [inlined]
+│  [19] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:300
+│  [20] handle_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:292 [inlined]
+│  [21] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/macros.jl:123
+│  [22] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [23] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [24] #153
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:425 [inlined]
+│  [25] run_work_thunk
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│  [26] #remotecall_fetch#158
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:450 [inlined]
+│  [27] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:449 [inlined]
+│  [28] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:492 [inlined]
+│  [29] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:344
+│  [30] setup_http_listener (repeats 2 times)
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:342 [inlined]
+│  [31] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:313
+│  [32] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:333
+│  [33] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:124
+│  [34] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [35] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [36] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:469
+│  [37] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:401
+│ 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:356
+┌ Info: 2024-05-03 14:05:06 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-03 14:05:25 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   20, 30, 45, 60, 
+│ 
+│   Exception:
+│   ArgumentError("input string is empty or only contains whitespace")
+│ 
+│   exception = (ArgumentError("input string is empty or only contains whitespace"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000071865d78c356, Ptr{Nothing} @0x000071865d3ae5dc, Ptr{Nothing} @0x0000718672b0dcca, Ptr{Nothing} @0x00007185dfd12774, Ptr{Nothing} @0x00007185dfd12978, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x000071865cd267b7, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x000071865d074edd, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x00007185f8390437, Ptr{Nothing} @0x00007185f8390475, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185dfd1ad37, Ptr{Nothing} @0x00007185dfd1b7fe, Ptr{Nothing} @0x00007185dfd1b850, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185dfd1ab14, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0be70bf, Ptr{Nothing} @0x00007185f0be7382, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0be1164, Ptr{Nothing} @0x00007185f0be15ad, Ptr{Nothing} @0x00007185f0be161a, Ptr{Nothing} @0x00007185f0be1659, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0bb643d, Ptr{Nothing} @0x00007185f0bb6492, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185fc329d8f, Ptr{Nothing} @0x00007185fc3ce963, Ptr{Nothing} @0x00007185fc38544c, Ptr{Nothing} @0x00007185f83c0214, Ptr{Nothing} @0x00007185f83c0365, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185f83bacb2, Ptr{Nothing} @0x00007185f83bd4a8, Ptr{Nothing} @0x00007185f83bdad2, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673069d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-03 14:05:25 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   20, 30, 45, 60,
+│ 
+│   Exception:
+│   ArgumentError("input string is empty or only contains whitespace")
+│ 
+│   exception = (ArgumentError("input string is empty or only contains whitespace"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000071865d78c356, Ptr{Nothing} @0x000071865d3ae5dc, Ptr{Nothing} @0x0000718672b0dcca, Ptr{Nothing} @0x00007185dfd12774, Ptr{Nothing} @0x00007185dfd12978, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x000071865cd267b7, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x000071865d074edd, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x00007185f8390437, Ptr{Nothing} @0x00007185f8390475, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185dfd1ad37, Ptr{Nothing} @0x00007185dfd1b7fe, Ptr{Nothing} @0x00007185dfd1b850, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185dfd1ab14, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0be70bf, Ptr{Nothing} @0x00007185f0be7382, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0be1164, Ptr{Nothing} @0x00007185f0be15ad, Ptr{Nothing} @0x00007185f0be161a, Ptr{Nothing} @0x00007185f0be1659, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0bb643d, Ptr{Nothing} @0x00007185f0bb6492, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185fc329d8f, Ptr{Nothing} @0x00007185fc3ce963, Ptr{Nothing} @0x00007185fc38544c, Ptr{Nothing} @0x00007185f83c0214, Ptr{Nothing} @0x00007185f83c0365, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185f83bacb2, Ptr{Nothing} @0x00007185f83bd4a8, Ptr{Nothing} @0x00007185f83bdad2, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673069d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-03 14:05:30 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   
+│ 
+│   Exception:
+│   ArgumentError("input string is empty or only contains whitespace")
+│ 
+│   exception = (ArgumentError("input string is empty or only contains whitespace"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000071865d78c356, Ptr{Nothing} @0x000071865d3ae5dc, Ptr{Nothing} @0x0000718672b0dc56, Ptr{Nothing} @0x00007185dfd12774, Ptr{Nothing} @0x00007185dfd12978, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x000071865cd267b7, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x000071865d074edd, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x00007185f8390437, Ptr{Nothing} @0x00007185f8390475, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185dfd1ad37, Ptr{Nothing} @0x00007185dfd1b7fe, Ptr{Nothing} @0x00007185dfd1b850, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185dfd1ab14, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0be70bf, Ptr{Nothing} @0x00007185f0be7382, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0be1164, Ptr{Nothing} @0x00007185f0be15ad, Ptr{Nothing} @0x00007185f0be161a, Ptr{Nothing} @0x00007185f0be1659, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0bb643d, Ptr{Nothing} @0x00007185f0bb6492, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185fc329d8f, Ptr{Nothing} @0x00007185fc3ce963, Ptr{Nothing} @0x00007185fc38544c, Ptr{Nothing} @0x00007185f83c0214, Ptr{Nothing} @0x00007185f83c0365, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185f83bacb2, Ptr{Nothing} @0x00007185f83bd4a8, Ptr{Nothing} @0x00007185f83bdad2, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673069d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-03 14:05:37 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   -10
+│ 
+│   Exception:
+│   ArgumentError("input string is empty or only contains whitespace")
+│ 
+│   exception = (ArgumentError("input string is empty or only contains whitespace"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000071865d78c356, Ptr{Nothing} @0x000071865d3ae5dc, Ptr{Nothing} @0x0000718672b0dc56, Ptr{Nothing} @0x00007185dfd12774, Ptr{Nothing} @0x00007185dfd12978, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x000071865cd267b7, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x000071865d074edd, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673058fc8, Ptr{Nothing} @0x00007185f8390437, Ptr{Nothing} @0x00007185f8390475, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185dfd19ebe, Ptr{Nothing} @0x00007185dfd1a939, Ptr{Nothing} @0x00007185dfd1a983, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185dfd19c31, Ptr{Nothing} @0x00007185dfd19d07, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0be70bf, Ptr{Nothing} @0x00007185f0be7382, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0be1164, Ptr{Nothing} @0x00007185f0be15ad, Ptr{Nothing} @0x00007185f0be161a, Ptr{Nothing} @0x00007185f0be1659, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x00007185f0bb643d, Ptr{Nothing} @0x00007185f0bb6492, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185fc329d8f, Ptr{Nothing} @0x00007185fc3ce963, Ptr{Nothing} @0x00007185fc38544c, Ptr{Nothing} @0x00007185f83c0214, Ptr{Nothing} @0x00007185f83c0365, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673056fc8, Ptr{Nothing} @0x00007185f83bacb2, Ptr{Nothing} @0x00007185f83bd4a8, Ptr{Nothing} @0x00007185f83bdad2, Ptr{Nothing} @0x0000718673046a0d, Ptr{Nothing} @0x0000718673069d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Info: 2024-05-03 14:06:55 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 14:10:36 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 14:11:00 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 14:12:05 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 14:13:43 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 14:14:13 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-03 14:14:14 MethodError: no method matching slider(::String, ::UnitRange{Int64}, ::Symbol; label::String, color::String)
+│ 
+│ Closest candidates are:
+│   slider(!Matched::AbstractRange{<:Union{Real, String, Symbol}}, !Matched::Union{Nothing, Symbol}, ::Any...; lazy, kwargs...)
+│    @ StippleUI ~/.julia/packages/StippleUI/V4Cjf/src/Ranges.jl:183
+│ 
+│ Stacktrace:
+│   [1] ui()
+│     @ Main.App ~/new_projects/sunmoon_website/app.jl:48
+│   [2] html!(data::typeof(Main.App.ui); context::Module, status::Int64, headers::Dict{String, String}, layout::String, forceparse::Bool, noparse::Bool, vars::@Kwargs{model::Main.App.var"##Main.App_ReactiveModel!#238"})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/w41yU/src/renderers/Html.jl:583
+│   [3] (::Stipple.Pages.var"#7#10"{typeof(Main.App.ui), String, @Kwargs{}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/0khJ6/src/Pages.jl:68
+│   [4] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:547
+│   [5] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:172
+│   [6] route_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Router.jl:147 [inlined]
+│   [7] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:300
+│   [8] handle_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:292 [inlined]
+│   [9] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/macros.jl:123
+│  [10] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [11] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [12] #153
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:425 [inlined]
+│  [13] run_work_thunk
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│  [14] #remotecall_fetch#158
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:450 [inlined]
+│  [15] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:449 [inlined]
+│  [16] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:492 [inlined]
+│  [17] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:344
+│  [18] setup_http_listener (repeats 2 times)
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:342 [inlined]
+│  [19] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:313
+│  [20] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:333
+│  [21] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:124
+│  [22] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [23] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [24] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:469
+│  [25] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers ~/.julia/packages/HTTP/PnoHb/src/Servers.jl:401
+│ 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:356
+┌ Info: 2024-05-03 14:14:23 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-03 14:14:36 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22

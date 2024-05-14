@@ -1,0 +1,201 @@
+┌ Info: 2024-05-13 10:26:07 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-13 10:26:26 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-13 10:26:26 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/PnoHb/src/Servers.jl:382
+┌ Info: 2024-05-13 10:40:49 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-13 10:41:43 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-13 10:42:01 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-13 10:42:01 Listening on: 127.0.0.1:8000, thread id: 4
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/PnoHb/src/Servers.jl:382
+┌ Info: 2024-05-13 11:45:58 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-13 11:46:20 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-13 11:46:20 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/PnoHb/src/Servers.jl:382
+┌ Info: 2024-05-13 20:59:44 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-13 20:59:45 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-13 20:59:45 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-13 21:00:31 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-13 21:01:47 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-13 21:01:49 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-13 21:01:49 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-13 21:02:54 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-13 21:02:58 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-13 21:02:58 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-13 21:03:47 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-13 21:04:14 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-13 21:04:16 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-13 21:04:16 Listening on: 127.0.0.1:8000, thread id: 4
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-13 21:05:32 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-13 21:05:57 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-13 21:06:00 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-13 21:06:00 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-13 21:07:34 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-13 21:07:55 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-13 21:07:57 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-13 21:07:57 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-13 21:10:15 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-13 21:10:50 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   -90
+│ 
+│   Exception:
+│   ArgumentError("invalid index: nothing of type Nothing")
+│ 
+│   exception = (ArgumentError("invalid index: nothing of type Nothing"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000070c64305ec36, Ptr{Nothing} @0x000070c5e77d84ca, Ptr{Nothing} @0x000070c5e77d851a, Ptr{Nothing} @0x000070c5e77d8596, Ptr{Nothing} @0x000070c5e77d85c5, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c6596f43b0, Ptr{Nothing} @0x000070c6596f4624, Ptr{Nothing} @0x000070c6596f5ab8, Ptr{Nothing} @0x000070c5e77cf5b1, Ptr{Nothing} @0x000070c5e77cf733, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77ce66c, Ptr{Nothing} @0x000070c5e77d69f8, Ptr{Nothing} @0x000070c5e77d6bb8, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c58fc8, Ptr{Nothing} @0x000070c6439267b7, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c58fc8, Ptr{Nothing} @0x000070c643c74edd, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c58fc8, Ptr{Nothing} @0x000070c65971ee77, Ptr{Nothing} @0x000070c65971eeb5, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c5e77be71e, Ptr{Nothing} @0x000070c5e77bf199, Ptr{Nothing} @0x000070c5e77bf1e3, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77be491, Ptr{Nothing} @0x000070c5e77be567, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e7797742, Ptr{Nothing} @0x000070c5e7797a02, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77912b5, Ptr{Nothing} @0x000070c5e779172d, Ptr{Nothing} @0x000070c5e779179a, Ptr{Nothing} @0x000070c5e77917d9, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e777b42d, Ptr{Nothing} @0x000070c5e777b482, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c5d56ccb4f, Ptr{Nothing} @0x000070c5d56749d3, Ptr{Nothing} @0x000070c5d5795358, Ptr{Nothing} @0x000070c65975c85c, Ptr{Nothing} @0x000070c65975c9b5, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c6597572a9, Ptr{Nothing} @0x000070c659759ad8, Ptr{Nothing} @0x000070c65975a102, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c69d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-13 21:10:54 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   Int64
+│ 
+│   Value:
+│   -90
+│ 
+│   Exception:
+│   ArgumentError("invalid index: nothing of type Nothing")
+│ 
+│   exception = (ArgumentError("invalid index: nothing of type Nothing"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000070c64305ec36, Ptr{Nothing} @0x000070c5e77d84ca, Ptr{Nothing} @0x000070c5e77d851a, Ptr{Nothing} @0x000070c5e77d8596, Ptr{Nothing} @0x000070c5e77d85c5, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c6596f43b0, Ptr{Nothing} @0x000070c6596f4624, Ptr{Nothing} @0x000070c6596f5ab8, Ptr{Nothing} @0x000070c5e77cf5b1, Ptr{Nothing} @0x000070c5e77cf733, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77ce66c, Ptr{Nothing} @0x000070c5e77d69f8, Ptr{Nothing} @0x000070c5e77d6bb8, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c58fc8, Ptr{Nothing} @0x000070c6439267b7, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c58fc8, Ptr{Nothing} @0x000070c643c74edd, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c58fc8, Ptr{Nothing} @0x000070c65971ee77, Ptr{Nothing} @0x000070c65971eeb5, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c5e77be71e, Ptr{Nothing} @0x000070c5e77bf199, Ptr{Nothing} @0x000070c5e77bf1e3, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77be491, Ptr{Nothing} @0x000070c5e77be567, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e7797742, Ptr{Nothing} @0x000070c5e7797a02, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77912b5, Ptr{Nothing} @0x000070c5e779172d, Ptr{Nothing} @0x000070c5e779179a, Ptr{Nothing} @0x000070c5e77917d9, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e777b42d, Ptr{Nothing} @0x000070c5e777b482, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c5d56ccb4f, Ptr{Nothing} @0x000070c5d56749d3, Ptr{Nothing} @0x000070c5d5795358, Ptr{Nothing} @0x000070c65975c85c, Ptr{Nothing} @0x000070c65975c9b5, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c6597572a9, Ptr{Nothing} @0x000070c659759ad8, Ptr{Nothing} @0x000070c65975a102, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c69d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Info: 2024-05-13 21:12:01 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-13 21:15:26 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Error: 2024-05-13 21:16:30 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   10, 10
+│ 
+│   Exception:
+│   DimensionMismatch("Length of `row` does not match `DataFrame` column count.")
+│ 
+│   exception = (DimensionMismatch("Length of `row` does not match `DataFrame` column count."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000070c5e73073e7, Ptr{Nothing} @0x000070c5e73082b6, Ptr{Nothing} @0x000070c5e73082e9, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77fc315, Ptr{Nothing} @0x000070c5e77fc463, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77f92cc, Ptr{Nothing} @0x000070c5e77fc608, Ptr{Nothing} @0x000070c5e77fc7c8, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c58fc8, Ptr{Nothing} @0x000070c6439267b7, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c58fc8, Ptr{Nothing} @0x000070c643c74edd, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c58fc8, Ptr{Nothing} @0x000070c65971ee77, Ptr{Nothing} @0x000070c65971eeb5, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c5e77b0ee7, Ptr{Nothing} @0x000070c5e77b19ae, Ptr{Nothing} @0x000070c5e77b1a00, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77b0cc4, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e7797742, Ptr{Nothing} @0x000070c5e7797a02, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77912b5, Ptr{Nothing} @0x000070c5e779172d, Ptr{Nothing} @0x000070c5e779179a, Ptr{Nothing} @0x000070c5e77917d9, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e777b42d, Ptr{Nothing} @0x000070c5e777b482, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c5d56ccb4f, Ptr{Nothing} @0x000070c5d56749d3, Ptr{Nothing} @0x000070c5d5795358, Ptr{Nothing} @0x000070c65975c85c, Ptr{Nothing} @0x000070c65975c9b5, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c6597572a9, Ptr{Nothing} @0x000070c659759ad8, Ptr{Nothing} @0x000070c65975a102, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c69d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-13 21:16:36 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   10, 10, 20
+│ 
+│   Exception:
+│   DimensionMismatch("Length of `row` does not match `DataFrame` column count.")
+│ 
+│   exception = (DimensionMismatch("Length of `row` does not match `DataFrame` column count."), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000070c5e77d7597, Ptr{Nothing} @0x000070c5e77d8466, Ptr{Nothing} @0x000070c5e77d8499, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77fc315, Ptr{Nothing} @0x000070c5e77fc463, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77f92cc, Ptr{Nothing} @0x000070c5e77fc608, Ptr{Nothing} @0x000070c5e77fc7c8, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c58fc8, Ptr{Nothing} @0x000070c6439267b7, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c58fc8, Ptr{Nothing} @0x000070c643c74edd, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c58fc8, Ptr{Nothing} @0x000070c65971ee77, Ptr{Nothing} @0x000070c65971eeb5, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c5e77b0ee7, Ptr{Nothing} @0x000070c5e77b19ae, Ptr{Nothing} @0x000070c5e77b1a00, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77b0cc4, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e7797742, Ptr{Nothing} @0x000070c5e7797a02, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e77912b5, Ptr{Nothing} @0x000070c5e779172d, Ptr{Nothing} @0x000070c5e779179a, Ptr{Nothing} @0x000070c5e77917d9, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c5e777b42d, Ptr{Nothing} @0x000070c5e777b482, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c5d56ccb4f, Ptr{Nothing} @0x000070c5d56749d3, Ptr{Nothing} @0x000070c5d5795358, Ptr{Nothing} @0x000070c65975c85c, Ptr{Nothing} @0x000070c65975c9b5, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c56fc8, Ptr{Nothing} @0x000070c6597572a9, Ptr{Nothing} @0x000070c659759ad8, Ptr{Nothing} @0x000070c65975a102, Ptr{Nothing} @0x000070c659c46a0d, Ptr{Nothing} @0x000070c659c69d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Info: 2024-05-13 21:17:08 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22

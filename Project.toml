@@ -1,0 +1,7 @@
+[deps]
+AstroLib = "c7932e45-9af1-51e7-9da9-f004cd3a462b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+GenieFramework = "a59fdf5c-6bf0-4f5d-949c-a137c9e2f353"
+SunMoonTables = "8c56a098-44c2-4e93-a311-800bbda682a6"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+TimeZones = "f269a46b-ccf7-5d73-abea-4c690281aa53"
