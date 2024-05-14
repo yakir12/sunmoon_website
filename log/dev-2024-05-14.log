@@ -1,0 +1,137 @@
+┌ Info: 2024-05-14 10:00:59 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-14 10:01:01 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 10:01:01 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Error: 2024-05-14 11:31:27 Failed to revise /home/yakir/new_projects/sunmoon_website/lib/SunMoonTables/src/SunMoonTables.jl
+│   exception = Revise.ReviseEvalException("/home/yakir/new_projects/sunmoon_website/lib/SunMoonTables/src/SunMoonTables.jl:82", Revise.ReviseEvalException("/home/yakir/new_projects/sunmoon_website/none:0", BoundsError(Any[:($(QuoteNode(Base.Enums.namemap))), :(($(QuoteNode(Core.Typeof)))(%J1)), :(($(QuoteNode(Core.apply_type)))($(QuoteNode(Type)), Crepuscular)), :(($(QuoteNode(Core.svec)))(%J2, %J3)), :(($(QuoteNode(Core.svec)))()), :(($(QuoteNode(Core.svec)))(%J4, %J5, $(QuoteNode(:(#= Enums.jl:214 =#))))), :($(Expr(:method, nothing, %J6, CodeInfo(
+1 ─     return Dict{Int32, Symbol}(6 => :civil, 18 => :astronomical, 12 => :nautical)
+)))), :(return nothing)], (9,)), Any[(top-level scope at none:0, 1)]), Any[(top-level scope at SunMoonTables.jl:82, 1)])
+└ @ Revise /home/yakir/.julia/packages/Revise/bAgL0/src/packagedef.jl:722
+┌ Warning: 2024-05-14 11:31:29 The running code does not match the saved version for the following files:
+│ 
+│   /home/yakir/new_projects/sunmoon_website/lib/SunMoonTables/src/SunMoonTables.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise /home/yakir/.julia/packages/Revise/bAgL0/src/packagedef.jl:832
+┌ Info: 2024-05-14 11:57:13 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-14 11:57:20 Warning: Variable 'nautical' not yet defined
+└ @ Main.App /home/yakir/.julia/packages/Stipple/0khJ6/src/ReactiveTools.jl:533
+┌ Info: 2024-05-14 11:57:23 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 11:57:23 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-14 11:57:48 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 11:59:10 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 11:59:47 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:01:31 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:01:44 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:08:56 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:09:15 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Warning: 2024-05-14 12:10:41 Failed to clean up temporary path "/tmp/jl_genie_build_munpBn"
+│ ErrorException("schedule: Task not runnable")
+└ @ Base.Filesystem file.jl:549
+ at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 11:59:59 Warning: Variable 'nautical' not yet defined
+└ @ Main.App /home/yakir/.julia/packages/Stipple/0khJ6/src/ReactiveTools.jl:533
+┌ Info: 2024-05-14 12:00:01 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-14 12:00:02 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 12:01:31 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:01:44 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:08:56 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:09:15 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Warning: 2024-05-14 12:10:41 Failed to clean up temporary path "/tmp/jl_genie_build_XIAVPl"
+│ ErrorException("schedule: Task not runnable")
+└ @ Base.Filesystem file.jl:549
+es/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 12:09:44 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-14 12:09:46 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 12:10:58 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-14 12:11:00 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 12:11:00 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-14 12:16:52 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:17:26 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-14 12:17:27 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 12:17:27 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-14 12:22:17 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:22:47 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:24:19 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:24:56 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-14 12:24:58 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 12:24:58 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-14 12:25:24 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:25:39 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-14 12:25:41 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 12:25:41 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-14 12:26:04 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:26:18 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-14 12:26:22 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 12:26:22 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-14 12:28:01 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:28:19 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-14 12:28:21 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 12:28:21 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-14 12:29:45 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-14 12:30:02 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-14 12:30:04 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-14 12:30:04 Listening on: 127.0.0.1:8000, thread id: 2
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382

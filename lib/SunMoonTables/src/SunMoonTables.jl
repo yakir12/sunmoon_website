@@ -3,6 +3,8 @@ module SunMoonTables
 using Dates
 using AstroLib, DataFrames, TimeZones
 
+export Crepuscular
+
 function get_sun(jds, latitude, longitude, altitude)
     right_ascension, declination = sunpos(jds)
     altaz = eq2hor.(right_ascension, declination, jds, latitude, longitude, altitude)
@@ -49,29 +51,21 @@ function one_day(dt, latitude, longitude, altitude, tz, desired_elevations)
     min_elevation = minimum(elevations)
     noon = string(totime(dts[noon_i]), " ", round(Int, max_elevation), "°")
     up = map(desired_elevations) do el
-        if el > max_elevation || el < min_elevation
-            "-"
-        else
+        if min_elevation ≤ el ≤ max_elevation
             i = findnext(≥(el), elevations, 1)
-            if isnothing(i)
-                "-"
-            else
-                totime(dts[i])
-            end
+            totime(dts[i])
+        else
+            "-"
         end
     end
     i = findnext(≥(0), elevations, 1)
     up[2] = string(up[2], " ", round(Int, get_sun_azimuth(jds[i], latitude, longitude, altitude)), "°")
     down = map(reverse(desired_elevations)) do el
-        if el > max_elevation || el < min_elevation
-            "-"
-        else
+        if min_elevation ≤ el ≤ max_elevation
             i = findnext(≤(el), elevations, noon_i + 1)
-            if isnothing(i)
-                "-"
-            else
-                totime(dts[i])
-            end
+            totime(dts[i])
+        else
+            "-"
         end
     end
     i = findnext(≤(0), elevations, noon_i + 1)
@@ -79,19 +73,38 @@ function one_day(dt, latitude, longitude, altitude, tz, desired_elevations)
     return (string(dt), up..., noon, down...)
 end
 
-function get_table(start_date::Date, end_date::Date, latitude::Real, longitude::Real, altitude::Real, tz::TimeZone, desired_elevations, crepuscular_elevation)
+# macro exported_enum(T, syms...)
+#     return esc(quote
+#                    @enum($T, $(syms...))
+#                    export $T
+#                    for inst in Symbol.(instances($T))
+#                        eval($(Expr(:quote, :(export $(Expr(:$, :inst))))))
+#                    end
+#                end)
+# end
+# @exported_enum Crepuscular none=0 civil=-6 nautical=-12 astronomical=-18
+
+@enum Crepuscular none=0 civil=-6 nautical=-12 astronomical=-18
+
+function str2crepuscular(str)
+    for instance in instances(Crepuscular)
+        if str == string(instance)
+            return instance
+        end
+    end
+    return nautical
+end
+
+function get_table(start_date::Date, end_date::Date, latitude::Real, longitude::Real, altitude::Real, tz::TimeZone, desired_elevations, crepuscular_elevation::Crepuscular)
     unique!(desired_elevations)
     filter!(x -> 0 < x < 90, desired_elevations)
     sort!(desired_elevations)
     df = fresh_df(desired_elevations)
-    if crepuscular_elevation > 0
-        crepuscular_elevation = 0
-    end
-    pushfirst!(desired_elevations, crepuscular_elevation, 0)
-    for dt in start_date:Day(1):end_date
+    pushfirst!(desired_elevations, Int(crepuscular_elevation), 0)
+    for dt in start_date:end_date
         push!(df, one_day(dt, latitude, longitude, altitude, tz, desired_elevations))
     end
-    if crepuscular_elevation == 0
+    if crepuscular_elevation == none
         select!(df, Not(r"crepuscular"))
     end
     return df
