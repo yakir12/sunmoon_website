@@ -1,0 +1,201 @@
+┌ Info: 2024-05-15 09:32:21 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-15 09:32:22 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-15 09:32:22 Listening on: 127.0.0.1:8000, thread id: 2
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Error: 2024-05-15 09:32:35 UndefVarError: `titelcase` not defined
+│ Stacktrace:
+│   [1] crepuscular2radio(crepuscular_instance::Main.SunMoonTables.Crepuscular)
+│     @ Main.App ~/new_projects/sunmoon_website/app.jl:55
+│   [2] _broadcast_getindex_evalf
+│     @ ./broadcast.jl:709 [inlined]
+│   [3] _broadcast_getindex
+│     @ ./broadcast.jl:682 [inlined]
+│   [4] #31
+│     @ ./broadcast.jl:1118 [inlined]
+│   [5] macro expansion
+│     @ ./ntuple.jl:72 [inlined]
+│   [6] ntuple
+│     @ ./ntuple.jl:69 [inlined]
+│   [7] copy
+│     @ ./broadcast.jl:1118 [inlined]
+│   [8] materialize
+│     @ ./broadcast.jl:903 [inlined]
+│   [9] ui()
+│     @ Main.App ~/new_projects/sunmoon_website/app.jl:61
+│  [10] html!(data::typeof(Main.App.ui); context::Module, status::Int64, headers::Dict{String, String}, layout::String, forceparse::Bool, noparse::Bool, vars::@Kwargs{model::Main.App.var"##Main.App_ReactiveModel!#237"})
+│     @ Genie.Renderer.Html ~/.julia/packages/Genie/w41yU/src/renderers/Html.jl:583
+│  [11] (::Stipple.Pages.var"#7#10"{typeof(Main.App.ui), String, @Kwargs{}})()
+│     @ Stipple.Pages ~/.julia/packages/Stipple/0khJ6/src/Pages.jl:68
+│  [12] run_route(r::Genie.Router.Route)
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:547
+│  [13] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router ~/.julia/packages/Genie/w41yU/src/Router.jl:172
+│  [14] route_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Router.jl:147 [inlined]
+│  [15] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:300
+│  [16] handle_request
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:292 [inlined]
+│  [17] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/macros.jl:123
+│  [18] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [19] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [20] #153
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:425 [inlined]
+│  [21] run_work_thunk
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/process_messages.jl:70
+│  [22] #remotecall_fetch#158
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:450 [inlined]
+│  [23] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:449 [inlined]
+│  [24] remotecall_fetch
+│     @ ~/.julia/juliaup/julia-1.10.3+0.x64.linux.gnu/share/julia/stdlib/v1.10/Distributed/src/remotecall.jl:492 [inlined]
+│  [25] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:344
+│  [26] setup_http_listener (repeats 2 times)
+│     @ ~/.julia/packages/Genie/w41yU/src/Server.jl:342 [inlined]
+│  [27] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:313
+│  [28] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:333
+│  [29] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server ~/.julia/packages/Genie/w41yU/src/Server.jl:124
+│  [30] #invokelatest#2
+│     @ ./essentials.jl:892 [inlined]
+│  [31] invokelatest
+│     @ ./essentials.jl:889 [inlined]
+│  [32] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers ~/.julia/packages/HTTP/sJD5V/src/Servers.jl:469
+│  [33] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers ~/.julia/packages/HTTP/sJD5V/src/Servers.jl:401
+│ 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:356
+┌ Info: 2024-05-15 09:33:02 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-15 09:33:24 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-15 09:33:26 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-15 09:33:26 Listening on: 127.0.0.1:8000, thread id: 2
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-15 09:35:26 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-15 09:35:51 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-15 09:35:53 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-15 09:35:53 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Info: 2024-05-15 09:37:41 Autoreloading
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:22
+┌ Info: 2024-05-15 09:38:04 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-15 09:38:06 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-15 09:38:06 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Error: 2024-05-15 09:39:56 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   Lund (Biologihuset)
+│ 
+│   Exception:
+│   ArgumentError("The time zone \"Europe/Stockholm\" is of class `TimeZones.Class(:LEGACY)` which is currently not allowed by the mask: `TimeZones.Class(:FIXED) | TimeZones.Class(:STANDARD)`")
+│ 
+│   exception = (ArgumentError("The time zone \"Europe/Stockholm\" is of class `TimeZones.Class(:LEGACY)` which is currently not allowed by the mask: `TimeZones.Class(:FIXED) | TimeZones.Class(:STANDARD)`"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007f5063ce1488, Ptr{Nothing} @0x00007f5063ce14f4, Ptr{Nothing} @0x00007f5063ce1525, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5063ce06f5, Ptr{Nothing} @0x00007f4ff25a2c64, Ptr{Nothing} @0x00007f4ff25a2e25, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064256fc8, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064258fc8, Ptr{Nothing} @0x00007f504df267b7, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064258fc8, Ptr{Nothing} @0x00007f504e274edd, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064258fc8, Ptr{Nothing} @0x00007f5063d1aaa7, Ptr{Nothing} @0x00007f5063d1aae5, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064256fc8, Ptr{Nothing} @0x00007f4ff25a1c57, Ptr{Nothing} @0x00007f4ff25a271e, Ptr{Nothing} @0x00007f4ff25a2770, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f4ff25a1a34, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f4ff25856bf, Ptr{Nothing} @0x00007f4ff2585982, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5063d6c7f5, Ptr{Nothing} @0x00007f5063d6cc6d, Ptr{Nothing} @0x00007f5063d6ccda, Ptr{Nothing} @0x00007f5063d6cd19, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5063d55b3d, Ptr{Nothing} @0x00007f5063d55b92, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064256fc8, Ptr{Nothing} @0x00007f4fed6ccb4f, Ptr{Nothing} @0x00007f4fed6749d3, Ptr{Nothing} @0x00007f4fed795358, Ptr{Nothing} @0x00007f5063d54edc, Ptr{Nothing} @0x00007f5063d55035, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064256fc8, Ptr{Nothing} @0x00007f5063d4f95b, Ptr{Nothing} @0x00007f5063d52168, Ptr{Nothing} @0x00007f5063d52792, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064269d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-15 09:41:39 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   Lund (Biologihuset)
+│ 
+│   Exception:
+│   ArgumentError("The time zone \"Europe/Stockholm\" is of class `TimeZones.Class(:LEGACY)` which is currently not allowed by the mask: `TimeZones.Class(:FIXED) | TimeZones.Class(:STANDARD)`")
+│ 
+│   exception = (ArgumentError("The time zone \"Europe/Stockholm\" is of class `TimeZones.Class(:LEGACY)` which is currently not allowed by the mask: `TimeZones.Class(:FIXED) | TimeZones.Class(:STANDARD)`"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007f5063ce1488, Ptr{Nothing} @0x00007f5063ce14f4, Ptr{Nothing} @0x00007f5063ce1525, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5063ce06f5, Ptr{Nothing} @0x00007f4ff25a2c64, Ptr{Nothing} @0x00007f4ff25a2e25, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064256fc8, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064258fc8, Ptr{Nothing} @0x00007f504df267b7, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064258fc8, Ptr{Nothing} @0x00007f504e274edd, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064258fc8, Ptr{Nothing} @0x00007f5063d1aaa7, Ptr{Nothing} @0x00007f5063d1aae5, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064256fc8, Ptr{Nothing} @0x00007f4ff25a1c57, Ptr{Nothing} @0x00007f4ff25a271e, Ptr{Nothing} @0x00007f4ff25a2770, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f4ff25a1a34, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f4ff25856bf, Ptr{Nothing} @0x00007f4ff2585982, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5063d6c7f5, Ptr{Nothing} @0x00007f5063d6cc6d, Ptr{Nothing} @0x00007f5063d6ccda, Ptr{Nothing} @0x00007f5063d6cd19, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5063d55b3d, Ptr{Nothing} @0x00007f5063d55b92, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064256fc8, Ptr{Nothing} @0x00007f4fed6ccb4f, Ptr{Nothing} @0x00007f4fed6749d3, Ptr{Nothing} @0x00007f4fed795358, Ptr{Nothing} @0x00007f5063d54edc, Ptr{Nothing} @0x00007f5063d55035, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064256fc8, Ptr{Nothing} @0x00007f5063d4f95b, Ptr{Nothing} @0x00007f5063d52168, Ptr{Nothing} @0x00007f5063d52792, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064269d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Error: 2024-05-15 09:42:17 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   Lund (Biologihuset)
+│ 
+│   Exception:
+│   ArgumentError("The time zone \"Europe/Stockholm\" is of class `TimeZones.Class(:LEGACY)` which is currently not allowed by the mask: `TimeZones.Class(:FIXED) | TimeZones.Class(:STANDARD)`")
+│ 
+│   exception = (ArgumentError("The time zone \"Europe/Stockholm\" is of class `TimeZones.Class(:LEGACY)` which is currently not allowed by the mask: `TimeZones.Class(:FIXED) | TimeZones.Class(:STANDARD)`"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007f5063ce1488, Ptr{Nothing} @0x00007f5063ce14f4, Ptr{Nothing} @0x00007f5063ce1525, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5063ce06f5, Ptr{Nothing} @0x00007f4ff25a2c64, Ptr{Nothing} @0x00007f4ff25a2e25, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064256fc8, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064258fc8, Ptr{Nothing} @0x00007f504df267b7, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064258fc8, Ptr{Nothing} @0x00007f504e274edd, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064258fc8, Ptr{Nothing} @0x00007f5063d1aaa7, Ptr{Nothing} @0x00007f5063d1aae5, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064256fc8, Ptr{Nothing} @0x00007f4ff25a1c57, Ptr{Nothing} @0x00007f4ff25a271e, Ptr{Nothing} @0x00007f4ff25a2770, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f4ff25a1a34, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f4ff25856bf, Ptr{Nothing} @0x00007f4ff2585982, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5063d6c7f5, Ptr{Nothing} @0x00007f5063d6cc6d, Ptr{Nothing} @0x00007f5063d6ccda, Ptr{Nothing} @0x00007f5063d6cd19, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5063d55b3d, Ptr{Nothing} @0x00007f5063d55b92, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064256fc8, Ptr{Nothing} @0x00007f4fed6ccb4f, Ptr{Nothing} @0x00007f4fed6749d3, Ptr{Nothing} @0x00007f4fed795358, Ptr{Nothing} @0x00007f5063d54edc, Ptr{Nothing} @0x00007f5063d55035, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064256fc8, Ptr{Nothing} @0x00007f5063d4f95b, Ptr{Nothing} @0x00007f5063d52168, Ptr{Nothing} @0x00007f5063d52792, Ptr{Nothing} @0x00007f5064246a0d, Ptr{Nothing} @0x00007f5064269d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Info: 2024-05-15 09:45:27 Watching ["/home/yakir/new_projects/sunmoon_website"]
+└ @ GenieAutoReload /home/yakir/.julia/packages/GenieAutoReload/ESvsh/src/GenieAutoReload.jl:19
+┌ Info: 2024-05-15 09:45:29 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-15 09:45:29 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382

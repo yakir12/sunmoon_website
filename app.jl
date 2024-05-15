@@ -50,15 +50,19 @@ end
     end
 end
 
+function crepuscular2radio(crepuscular_instance)
+    label = string(crepuscular_instance)
+    name = titlecase(label)
+    α = Int(crepuscular_instance)
+    radio("$name $(α)°", :crepuscular_str, val = label)
+end
+
 function ui()
     [
      item([
            itemsection(datepicker(:daterange, range=true, minimal=true)),
            itemsection(select(:station; options=:stations)),
-           itemsection([radio("None", :crepuscular_str, val = "none"),
-                        radio("Civil", :crepuscular_str, val = "civil"),
-                        radio("Nautical", :crepuscular_str, val = "nautical"),
-                        radio("Astronomical", :crepuscular_str, val = "astronomical")]),
+           itemsection([crepuscular2radio(crepuscular_instance) for crepuscular_instance in instances(Crepuscular)]),
            itemsection(textfield("Elevations", :elevations_str, filled = "20, 30, 45, 60, 75"))
           ])
      # p(@text(:declination_msg))

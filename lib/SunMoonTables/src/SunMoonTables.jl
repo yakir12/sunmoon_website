@@ -43,6 +43,13 @@ function fresh_df(desired_elevations)
     return df
 end
 
+elevation2time(fun, el, from, min_elevation, max_elevation, elevations, dts) = if min_elevation ≤ el ≤ max_elevation
+    i = findnext(fun(el), elevations, from)
+    totime(dts[i])
+else
+    "-"
+end
+
 function one_day(dt, latitude, longitude, altitude, tz, desired_elevations)
     dts = range(DateTime(dt), step = Minute(1), length = 60*24 - 1)
     jds = dt2julian.(dts, tz)
@@ -50,39 +57,14 @@ function one_day(dt, latitude, longitude, altitude, tz, desired_elevations)
     max_elevation, noon_i = findmax(elevations)
     min_elevation = minimum(elevations)
     noon = string(totime(dts[noon_i]), " ", round(Int, max_elevation), "°")
-    up = map(desired_elevations) do el
-        if min_elevation ≤ el ≤ max_elevation
-            i = findnext(≥(el), elevations, 1)
-            totime(dts[i])
-        else
-            "-"
-        end
-    end
+    up = map(el -> elevation2time(≥, el, 1, min_elevation, max_elevation, elevations, dts), desired_elevations)
     i = findnext(≥(0), elevations, 1)
     up[2] = string(up[2], " ", round(Int, get_sun_azimuth(jds[i], latitude, longitude, altitude)), "°")
-    down = map(reverse(desired_elevations)) do el
-        if min_elevation ≤ el ≤ max_elevation
-            i = findnext(≤(el), elevations, noon_i + 1)
-            totime(dts[i])
-        else
-            "-"
-        end
-    end
+    down = map(el -> elevation2time(≤, el, noon_i, min_elevation, max_elevation, elevations, dts), reverse(desired_elevations))
     i = findnext(≤(0), elevations, noon_i + 1)
     down[end - 1] = string(down[end - 1], " ", round(Int, get_sun_azimuth(jds[i], latitude, longitude, altitude)), "°")
     return (string(dt), up..., noon, down...)
 end
-
-# macro exported_enum(T, syms...)
-#     return esc(quote
-#                    @enum($T, $(syms...))
-#                    export $T
-#                    for inst in Symbol.(instances($T))
-#                        eval($(Expr(:quote, :(export $(Expr(:$, :inst))))))
-#                    end
-#                end)
-# end
-# @exported_enum Crepuscular none=0 civil=-6 nautical=-12 astronomical=-18
 
 @enum Crepuscular none=0 civil=-6 nautical=-12 astronomical=-18
 

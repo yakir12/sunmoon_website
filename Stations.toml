@@ -40,4 +40,4 @@ name = "Lund (Biologihuset)"
 latitude = 55.71331
 longitude = 13.20764
 altitude = 62
-timezone = "Europe/Stockholm"
+timezone = "CET"
