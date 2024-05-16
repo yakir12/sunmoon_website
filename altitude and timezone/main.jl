@@ -34,9 +34,21 @@ end
 
 get_altitude(latitude, longitude) = ALTITUDE[](longitude, latitude)
 
+function label(latitude, longitude)
+    altitude = round(Int, get_altitude(latitude, longitude))
+    tz = timezone_at(latitude, longitude)
+    TimeZone(string(tz))
+    txt = """
+    latitude = $latitude
+    longitude = $longitude
+    altitude = $altitude
+    timezone = "$tz"
+    """
+    println(txt)
+end
 
-latitude = 55.71331
-longitude = 13.20764
+latitude = -24.7219
+longitude = 27.9373
 
-altitude = get_altitude(latitude, longitude)
-tz = timezone_at(latitude, longitude)
+label(latitude, longitude)
+
