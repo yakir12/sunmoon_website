@@ -1,0 +1,46 @@
+┌ Info: 2024-05-17 13:16:16 
+│ Web Server starting at http://127.0.0.1:8000 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-17 13:16:16 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Error: 2024-05-17 13:17:24 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for callable object:
+│  [1] (onany::Observables.OnAny)(value)
+│      @ ~/.julia/packages/Observables/YdEbO/src/Observables.jl:419
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─      nothing
+│ │   %2 = Base.invokelatest
+│ │   %3 = Base.getproperty(onany, :f)
+│ │   %4 = Core.tuple(%3)
+│ │   %5 = Observables.to_value
+│ │   %6 = Base.getproperty(onany, :args)
+│ │   %7 = Observables.map(%5, %6)
+│ │   %8 = Core._apply_iterate(Base.iterate, %2, %4, %7)
+│ └──      return %8
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   Lund (Biologihuset)
+│ 
+│   Exception:
+│   ArgumentError("invalid index: nothing of type Nothing")
+│ 
+│   exception = (ArgumentError("invalid index: nothing of type Nothing"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007761dae5ec36, Ptr{Nothing} @0x00007761ebf76afa, Ptr{Nothing} @0x00007761ebf76b4a, Ptr{Nothing} @0x00007761ebf77283, Ptr{Nothing} @0x00007761ebf77448, Ptr{Nothing} @0x00007761ebf77e4e, Ptr{Nothing} @0x00007761ebf7a97c, Ptr{Nothing} @0x00007761ebf7aa83, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761ebf62b1b, Ptr{Nothing} @0x00007761b4ba3f14, Ptr{Nothing} @0x00007761b4ba40d5, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761f1a56fc8, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761f1a58fc8, Ptr{Nothing} @0x00007761db7267b7, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761f1a58fc8, Ptr{Nothing} @0x00007761dba74edd, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761f1a58fc8, Ptr{Nothing} @0x00007761ebf9cad7, Ptr{Nothing} @0x00007761ebf9cb15, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761f1a56fc8, Ptr{Nothing} @0x00007761b4ba2f07, Ptr{Nothing} @0x00007761b4ba39ce, Ptr{Nothing} @0x00007761b4ba3a20, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761b4ba2ce4, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761b4b8b3df, Ptr{Nothing} @0x00007761b4b8b6a2, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761b4b850b5, Ptr{Nothing} @0x00007761b4b8552d, Ptr{Nothing} @0x00007761b4b8559a, Ptr{Nothing} @0x00007761b4b855d9, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761b4b6f86d, Ptr{Nothing} @0x00007761b4b6f8c2, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761f1a56fc8, Ptr{Nothing} @0x00007761afcccb4f, Ptr{Nothing} @0x00007761afc749d3, Ptr{Nothing} @0x00007761afd95358, Ptr{Nothing} @0x00007761ebfb9e6f, Ptr{Nothing} @0x00007761ebfb9fc5, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761f1a56fc8, Ptr{Nothing} @0x00007761ebfb48d9, Ptr{Nothing} @0x00007761ebfb70f8, Ptr{Nothing} @0x00007761ebfb7722, Ptr{Nothing} @0x00007761f1a46a0d, Ptr{Nothing} @0x00007761f1a69d6f])
+└ @ Stipple /home/yakir/.julia/packages/Stipple/0khJ6/src/stipple/mutators.jl:54
+┌ Warning: 2024-05-17 13:21:31 Failed to clean up temporary path "/tmp/jl_genie_build_5LXuhY"
+│ ErrorException("schedule: Task not runnable")
+└ @ Base.Filesystem file.jl:549
+┌ Info: 2024-05-17 13:21:57 
+│ Web Server starting at http://127.0.0.1:8000 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server /home/yakir/.julia/packages/Genie/w41yU/src/Server.jl:182
+┌ Info: 2024-05-17 13:21:58 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers /home/yakir/.julia/packages/HTTP/sJD5V/src/Servers.jl:382
+┌ Warning: 2024-05-17 13:24:06 Failed to clean up temporary path "/tmp/jl_genie_build_Vkcn68"
+│ ErrorException("schedule: Task not runnable")
+└ @ Base.Filesystem file.jl:549

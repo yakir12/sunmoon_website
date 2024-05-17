@@ -43,11 +43,14 @@ function fresh_df(desired_elevations)
     return df
 end
 
-elevation2time(fun, el, from, min_elevation, max_elevation, elevations, dts) = if min_elevation ≤ el ≤ max_elevation
-    i = findnext(fun(el), elevations, from)
-    totime(dts[i])
-else
-    "-"
+function elevation2time(fun, el, from, min_elevation, max_elevation, elevations, dts) 
+    if min_elevation ≤ el ≤ max_elevation
+        i = findnext(fun(el), elevations, from)
+        if !isnothing(i)
+            return totime(dts[i])
+        end
+    end
+    return "-"
 end
 
 function one_day(dt, latitude, longitude, altitude, tz, desired_elevations)
